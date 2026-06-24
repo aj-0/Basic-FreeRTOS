@@ -233,12 +233,12 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
-    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+    BaseType_t juzttry = pdFALSE;
 
-	vTaskNotifyGiveFromISR(T, &xHigherPriorityTaskWoken);
+	vTaskNotifyGiveFromISR(T, &juzttry);
 
     portYIELD_FROM_ISR(
-        xHigherPriorityTaskWoken);
+        juzttry);
 }
 
 /* USER CODE END 4 */
