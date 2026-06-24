@@ -21,6 +21,7 @@
 #include "freertos.h"
 #include "task.h"
 #include <stdio.h>
+// FREErtosconfig.h   ---------------->  #define configCHECK_FOR_STACK_OVERFLOW 2
 
 
 /* Private includes ----------------------------------------------------------*/
